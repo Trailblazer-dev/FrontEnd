@@ -1,0 +1,44 @@
+body{
+    background-color: olivedrab;
+    display: block;
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.aim{
+    background-repeat: no-repeat;
+    font-style: italic;
+    padding: auto;
+
+}
+.aim strong{
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+.procedures h3{
+    background-color: springgreen;
+    font-weight: bold;
+    text-align: center;
+}
+.dataCollected{
+    text-align: center;
+}
+.data_collected{
+    display: inline-table;
+
+    padding: 30px;
+    color: #8a0a0a;
+    border: 50%;
+}
+.data_collected th{
+    color: blue;
+    background-color: chartreuse;
+    border: 30px;
+    border: #109beb;
+}
+tr{
+    background-color: sienna;
+    border-radius: 50%;
+}

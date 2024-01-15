@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table caption{
+            background-color: yellow;
+        }
+        table thead{
+            background-color: purple;
+        }
+        table tbody{
+            background-color: blue;
+        }
+        table tfoot{
+            background-color: green;
+        }
+        table th{
+            border-color: orange;
+        }
+        table td{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table Title</caption><!--caption is the first child of table-->
+        <thead><!-- is after caption-->
+        <tr>
+            <th>Head 01</th>
+            <th>Head 02</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>body one</td>
+            <td>body two</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer 01</td>
+                <td>footer 02</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form>
+        <fieldset>
+            <legend>Is Usa the most powerful Nation?</legend>
+            <label><input type="checkbox" value="true" id="known">True</label>
+            <label><input type="checkbox" value="fals3" >False</label>
+        </fieldset>
+        <fieldset>
+            <legend>Your details</legend>
+            <label>First name:<input type="text" required></label>
+            <label>Last name:<input type="text"required></label>
+        </fieldset>
+        <fieldset>
+            <legend >please select your gender</legend>
+            <label>Male<input type="radio" name="gender" value="gender"></label>
+            <label>Female<input type="radio" name="gender" value="gender"></label>
+            <label>Prefer not to say<input type="radio" name="gender" value="gender"></label>
+        </fieldset>
+    </form>
+</body>
+</html>

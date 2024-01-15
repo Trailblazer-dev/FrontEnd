@@ -1,0 +1,27 @@
+html{
+    background-color: aqua;
+    font-size: 14px;
+}
+head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+}
+p{
+    font-style: italic;
+}
+body{
+    background-color: rgb(12, 87, 174);
+}
+ol{
+    list-style-type: upper-alpha;
+}
+a:hover{
+    background-color: rgb(87, 223, 24);
+}
+#basic{
+    font-weight: 100;
+    background-attachment: scroll;
+    font-size: 10px;
+    background-clip: border-box;
+    background-color: azure;
+}

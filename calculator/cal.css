@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/664/710/original/vector-abstract-technology-background-hi-tech-communication-digital-background.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.logo {
+  width: 80px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+.calculator {
+  max-width: 300px;
+  margin: auto;
+  border: 2px solid #2a83e8;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(255, 174, 0);
+  box-shadow: 0 0 10px rgba(47, 36, 36, 0.1);
+}
+input {
+    color: #100e04;
+  width: calc(100% - 10px);
+  height: 70px;
+  font-size: 20px;
+  text-align: right;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 5px solid rgb(247, 246, 243);
+  border: none;
+  border-bottom: 2px solid #827c7c;
+  background-color: rgba(241, 246, 244, 1.);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #1b0e0e;
+}
+tr{
+    background-color: peru;
+}
+
+button {
+  width: 70%;
+  height: 50px;
+  font-size: 16px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.digit {
+  background-color: #fef8f3; 
+  color: rgb(17, 14, 14);
+}
+
+button.operator {
+  background-color: #f44336;
+  color: rgb(7, 6, 6);
+}
+
+button.equals {
+  background-color: #008CBA;
+}
+
+button.clear {
+  background-color: #100808;
+  color: rgb(12, 10, 10);
+}
+
+button:hover {
+  background-color: #ddd;
+}

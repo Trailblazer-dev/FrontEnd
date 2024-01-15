@@ -1,0 +1,20 @@
+body{
+    width: 100%;
+    background-color: #acacb1;
+}
+header >h1{
+    background-color:rgb(58, 62, 62);
+    text-align: center;
+    margin-top: 0;
+    color:#f1f1f4
+}
+nav >ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 2px solid #384f8b;
+}
+nav >ul>li:hover,a{
+    text-decoration: none;
+    cursor: pointer;
+}
