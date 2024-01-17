@@ -1,6 +1,7 @@
 body{
     width: 100%;
     background-color: #acacb1;
+    text-align: center;
 }
 header >h1{
     background-color:rgb(58, 62, 62);
@@ -10,11 +11,46 @@ header >h1{
 }
 nav >ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
     border-bottom: 2px solid #384f8b;
 }
 nav >ul>li:hover,a{
     text-decoration: none;
+    cursor: pointer;
+}
+.services >ul >li{
+    text-decoration:#384f8b;
+    display: block;
+    list-style: lower-latin;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80vw;
+    max-width: 80%;
+    min-width: 40%;
+    justify-content: center;
+}
+.sign_in label ,.sign_in input{
+    display: inline-block;
+    cursor: pointer;
+
+}
+.sign_in input{
+    padding: 0.3px;
+    text-align: left;
+}
+.sign_in label{
+    padding: 1%;
+    text-align: center;
+}
+.submit input{
+    width:14%;
+    text-align: center;
+    display: inline-block;
+    min-width: 30%;
     cursor: pointer;
 }
