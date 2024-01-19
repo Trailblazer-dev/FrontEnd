@@ -20,7 +20,7 @@ nav >ul>li:hover,a{
     text-decoration: none;
     cursor: pointer;
 }
-.services >ul >li{
+#services >ul >li{
     text-decoration:#384f8b;
     display: block;
     list-style: lower-latin;
@@ -53,4 +53,27 @@ form{
     display: inline-block;
     min-width: 30%;
     cursor: pointer;
+}
+a{
+    background-color: #98abd9;
+    color: black;
+}
+ul li{
+    list-style: none;
+    padding: 0.5%;
+}
+.form{
+    padding-bottom: 3%;
+    border-bottom: 2px solid #543838;
+}
+footer{
+    padding-top: 0;
+}
+h3{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
 }
