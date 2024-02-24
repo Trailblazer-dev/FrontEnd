@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" async ></script>
+</head>
+<body>
+   <!--  <header>
+        <h1>Game of Life</h1>
+        <p>Click on the canvas to start the game</p>
+    </header> -->
+    <main>
+
+        <button id="btn">
+            click me
+        </button>
+      
+
+        <div class="container">
+
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. \
+            Tempora, cupiditate!</P>
+        </div>
+
+
+        <script>
+            const button = document.getElementById('btn');
+            const container = document.querySelector('.container')
+
+            const qoute = ['hello', 'world', 'goodbye']
+
+        button.addEventListener('click', function (){
+            let index =  Math.floor(Math.random()  * qoute.length)
+            container.textContent = qoute[index]
+            
+        })
+        </script>
+
+        
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
