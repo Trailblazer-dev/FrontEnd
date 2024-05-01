@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>SKILLBRIDGE</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <header class="top_header">
+        <img src="img/icons8-skill-48.png" alt="Icon">
+        <h1>SkillBridge</h1>
+        <nav class="navbar"aria-hidden=true>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <script src="js/login.js" aria-hidden="true"></script>
+
+        <div class="toogglebtn">
+            <button onclick="toggleForm('login')">Login</button>
+            <button onclick="toggleForm('signup')">Sign Up</button>
+        </div>
+
+        <form id="loginForm" class="loginForm">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+
+        <form id="signUpForm" class="signUpForm">
+            <h2>Sign Up</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+        <footer>
+            <div class="footer">
+                <p>&copy; 2022 SkillBridge. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+
+</html>

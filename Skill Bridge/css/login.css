@@ -1,0 +1,106 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../img/Aesthetic\ Blue\ Technology\ Background\ Display\ Board\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+}
+.top_header{
+    margin-top: 0 auto;
+}
+.top_header h1{
+    margin-top: 0;
+    /*background-color: #50b3dd;*/
+    color:#edf3f3;
+}
+img,h1{
+    display: inline-block;
+    margin: 0 0.5em 0 0;
+}
+.navbar{
+    background-color:beige;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #e54a4a;
+}
+.toogglebtn{
+    display:inline-flex;
+}
+.toogglebtn button{
+    background-color: #50b3dd;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.toogglebtn button:hover{
+    background-color: #e54a4a;
+}
+.loginForm, .signUpForm {
+    display: none;
+}
+h2{
+    color:#edf3f3
+}
+label{
+    color: #edf3f3;
+    font-size: 20px;
+}
+.loginForm input[type=text], input[type=password] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.loginForm input[type=submit]{
+    width: 100px;
+    background-color: #50b3dd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+.loginForm input[type=submit]:hover{
+    background-color: #e54a4a;
+}
+/*SignUp start*/
+.signUpForm input[type=text],input[type=email],input[type=password]{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.signUpForm input[type=submit]{
+    width: 100px;
+    background-color: #50b3dd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+.signUpForm input[type=submit]:hover{
+    background-color: #e54a4a;
+}
