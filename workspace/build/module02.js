@@ -16,10 +16,10 @@ fullname = firstname + " " + lastname;
 age = 32;
 ukCitizen = false;
 if (ukCitizen) {
-    console.log("My name is " + fullname + ", I am " + age + " and I am a citizen of the United Kindom");
+    console.log(`My name is ${fullname}, I am ${age}  and I am a citizen of the United Kindom`);
 }
 else {
-    console.log("My name is " + fullname + " ,I  am " + age + " and I am not a citizen of the United Kindom");
+    console.log(`My name is ${fullname}, I  am ${age} and I am not a citizen of the United Kindom`);
 }
 console.log("Exercise one is Done");
 //exercise two
