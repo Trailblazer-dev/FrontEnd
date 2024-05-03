@@ -8,77 +8,37 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-header >h1{
-    background-color:rgb(58, 62, 62);
-    text-align: center;
-    margin-top: 0;
-    color:#f1f1f4
-}
-nav >ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
-    border-bottom: 2px solid #384f8b;
-}
-nav >ul>li:hover,a{
-    text-decoration: none;
-    cursor: pointer;
-}
-#services >ul >li{
-    text-decoration:#384f8b;
-    display: block;
-    list-style: lower-latin;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80vw;
-    max-width: 80%;
-    min-width: 40%;
-    justify-content: center;
-}
-.sign_in label ,.sign_in input{
-    display: inline-block;
-    cursor: pointer;
 
+.navbar{
+    background-color: #3b3b3b;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top:0;
+    padding: 0;
 }
-.sign_in input{
-    padding: 0.3px;
-    text-align: left;
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4px;
 }
-.sign_in label{
-    padding: 1%;
-    text-align: center;
+.navbar ul li{
+    list-style: none;
 }
-.submit input{
-    width:14%;
-    text-align: center;
-    display: inline-block;
-    min-width: 30%;
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color:aqua;
     cursor: pointer;
 }
-a{
-    background-color: #98abd9;
-    color: black;
-}
-ul li{
-    list-style: none;
-    padding: 0.5%;
-}
-.form{
-    padding-bottom: 3%;
-    border-bottom: 2px solid #543838;
-}
-footer{
-    padding-top: 0;
-}
-h3{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.footer{
-    display: flex;
-    flex-direction: row;
+header h1{
+    /*background-color:rgb(58, 62, 62);*/
+    color:#4747f0;
+    margin-top:60px;
+    font-size: 40px;
+    font-weight: bold;
 }
