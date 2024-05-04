@@ -7,14 +7,16 @@ body{
     background-color: #acacb1;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
-
+header {
+    position: sticky;
+    top: 0;
+}
 .navbar{
     background-color: #3b3b3b;
     width: 100%;
     margin: 0;
-    position: fixed;
-    top:0;
     padding: 0;
 }
 .navbar ul{
@@ -35,10 +37,4 @@ body{
     color:aqua;
     cursor: pointer;
 }
-header h1{
-    /*background-color:rgb(58, 62, 62);*/
-    color:#4747f0;
-    margin-top:60px;
-    font-size: 40px;
-    font-weight: bold;
-}
+
