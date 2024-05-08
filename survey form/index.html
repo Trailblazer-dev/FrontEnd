@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" name="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1 id="title">Technology survey Form</h1>
+      <p id="description">Please fill all the fields below</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Enter your name:</label>
+        <input type="text" id="name" 
+        placeholder="firstname ,lastname"required/>
+        <label for="email" id="email-label">Enter your email:</label>
+        <input type="email" id="email" placeholder="example@gmail.com"required/>
+        <label for="number" id="number-label">Enter phone number:</label>
+        <input type="number" id="number" min="10" max="10" placeholder="0712345678">
+        <label for="age_blanket" id="age-label">Age blanket:</label>
+        <select id="age_blanket">
+          <option>Above 18 years</option>
+          <option>Below 18 years</option>
+          </select><br>
+          <input type="radio" name="gender" value="male" checked/>Male
+          <input type="radio" name="gender" value="female"/>Female
+          <hr>
+          <fieldset>
+            <legend>Choose the field that you are interested in:</legend>
+            <ul>
+                <li><input type="checkbox" checked value="Cybersecurity"/>Cybersecurity</li>
+                <li><input type="checkbox" value="Data science"/>Data science</li>
+                <li><input type="checkbox" value="Web development">Web development </li>
+                <li><input type="checkbox" value="android development">android development</li>
+            </ul>
+            <textarea value="additional comments">additional comments</textarea>
+            </fieldset>
+            <input type="submit" value="submit" id="submit">
+        </form>
+      </body>
+  </html>
