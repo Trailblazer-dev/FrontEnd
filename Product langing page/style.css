@@ -14,27 +14,31 @@ body{
     margin:0 auto;
 }
 #header{
-    display: inline-block;
+    display: inline-flex;
     background: var(--nav-background-color);
     width:100%;
     height: 50px;
     top:0;
     position: sticky;
+    flex-wrap: nowrap;
 }
 #header-img{
-    float: left;
     width:auto;
     height:40px;
+    text-align: left;
 }
 .nav-bar {
-    float: right;
     margin:0;
-    z-index: 1;
-    position:relative
+    position:relative;
+    text-align: right;
+    flex: content;
+
 }
+
 .nav-bar ul li{
-    display: inline-block;
+    display: inline-flex;
     padding-left:10px;
+    flex-wrap: wrap;
 }
 .nav-bar ul li a{
     text-decoration: none;
@@ -50,3 +54,199 @@ body{
 .nav-bar ul li:last-of-type{
     margin-right:20px ;
 }
+
+.intro{
+    display: block;
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 10px;
+}
+form{
+    display: block;
+    border:2px solid bisque;
+}
+.intro h1{
+    font-weight:700;
+    font-size: large;
+    font-family:monospace;
+
+}
+input[type="email"]{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button[type="submit"]{
+    background-color: #11cee7;
+    color: rgb(10, 10, 10);
+    width: 150px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+button[type="submit"]:hover{
+    background-color: #126308;
+    color: white;
+}
+#features{
+    display:grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(2rem, 1fr);
+    gap:1rem;
+    margin-bottom: 20px;
+    
+
+}
+.smart-home{
+    display:grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-rows: 40px 100px;
+    margin:0;
+    padding: 0;
+    position: relative;
+    column-gap: 5px;
+
+}
+.smart-home img{
+    width: 100%;
+    padding:0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.smart-home h3{
+    grid-column: 2/5;
+    grid-row: 0/1;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 0;
+}
+.smart-home h3:hover{
+    cursor: pointer;
+}
+.smart-home p{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.smart-light{
+    display:grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-rows: 40px 100px;
+    margin:0;
+    padding: 0;
+    position: relative;
+
+}
+.smart-light img{
+    width: 90%;
+    padding:0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    overflow: hidden;
+}
+.smart-light h3{
+    grid-column: 2/5;
+    grid-row: 0/1;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 0;
+}
+.smart-light h3:hover{
+    cursor: pointer;
+}
+.smart-light p{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.smart-lock{
+    display:grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-rows: 40px 100px;
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+.smart-lock img{
+    width: 70%;
+    padding:0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    overflow: hidden;
+}
+.smart-lock h3{
+    grid-column: 2/5;
+    grid-row: 0/1;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 0;
+}
+.smart-lock h3:hover{
+    cursor: pointer;
+}
+.smart-lock p{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.home-energy{
+    display:grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-rows: 40px 100px;
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+.home-energy img{
+    width: 100%;
+    padding:0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    overflow: hidden;
+}
+.home-energy h3{
+    grid-column: 2/5;
+    grid-row: 0/1;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 0;
+}
+.home-energy h3:hover{
+    cursor: pointer;
+}
+.home-energy p{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.how-it-works{
+    margin:0 auto;
+}
+.how-it-works iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+}
+#pricing{
+    display: grid;
+    grid-template-columns:repeat(2, minmax(3rem,1fr));
+    grid-template-columns:repeat(2, minmax(3rem,1fr));
+
+}
+.smart
