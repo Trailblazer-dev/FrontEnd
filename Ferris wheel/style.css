@@ -87,6 +87,7 @@ Replace linear to ease-in-out */
   position: absolute;
   border: 2px solid;
   transform-origin: 50% 0%;
+  /*if transform-origin:0% 0%; means top left*/
   animation: cabins 10s ease-in-out infinite;
 }
 

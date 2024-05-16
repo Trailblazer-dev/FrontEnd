@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgb(44, 44, 37) 5%,#6d5757 100%);
+}
+.trial{
+    position:absolute;
+    width:50%;
+    height:50%;
+    margin:20px auto;
+    background-color: yellow;
+    border:2px solid red;
+    border-left:2px  solid green;
+    border-right:5px  solid rgb(38, 0, 255);
+    transform: rotate(7deg);
+}
