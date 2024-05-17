@@ -14,3 +14,7 @@ function calculateResult() {
     document.getElementById('result').value = 'Error';
   }
 }
+function backspace() {
+  const result = document.getElementById('result').value;
+  document.getElementById('result').value = result.slice(0, -1);
+}

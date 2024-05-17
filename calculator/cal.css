@@ -1,82 +1,62 @@
-html{
+*{
   box-sizing: border-box;
 }
 body {
-  font-family: 'Arial', sans-serif;
+  font-family:'Times New Roman', Times, serif;
   text-align: center;
-  margin: 50px;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/000/664/710/original/vector-abstract-technology-background-hi-tech-communication-digital-background.jpg");
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  margin:0;
+  background: linear-gradient(45deg,rgba(53, 51, 51, 0.249) 10%,#193b1d 100%,rgb(86, 159, 184) 20%); 
+  width:100%;
+  height:100vh;
 }
-.logo {
-  width: 80px; 
-  height: auto; 
-  margin-right: 10px; 
+.header{
+  display:inline-block;
 }
-
-.calculator {
-  max-width: 300px;
-  margin: auto;
-  border: 2px solid #2a83e8;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: rgb(255, 174, 0);
-  box-shadow: 0 0 10px rgba(47, 36, 36, 0.1);
+main{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  padding:0;
 }
-input {
-    color: #100e04;
-  width: calc(100% - 10px);
-  height: 70px;
-  font-size: 20px;
-  text-align: right;
-  padding: 50px;
-  box-sizing: border-box;
-  margin: 5px solid rgb(247, 246, 243);
-  border: none;
-  border-bottom: 2px solid #827c7c;
-  background-color: rgba(241, 246, 244, 1.);
+.calculator{
+  margin:30px auto;
+  width:max-content;
+  height:max-content;
+  padding:5px;
+  border:2px solid rgb(61, 180, 220);
+  background:linear-gradient(90deg ,rgb(138, 138, 127)10%,rgb(45, 45, 48)100%,rgb(125, 108, 108)4%);
+}
+table{
+  width:100%;
+  height:100% ;
+  padding:5px;
+  border:2px solid linear-gradient(45deg ,blue,white);
 }
 
-table {
-  width: 100%;
-  table-layout: fixed;
-  background-color: #1b0e0e;
-}
-tr{
-    background-color: peru;
-}
-
-button {
-  width: 70%;
-  height: 50px;
-  font-size: 16px;
+thead th{
+  padding: 0;
   margin: 0;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
-
-button.digit {
-  background-color: #fef8f3; 
-  color: rgb(17, 14, 14);
+thead th label{
+  font-size: 20px;
 }
-
-button.operator {
-  background-color: #f44336;
-  color: rgb(7, 6, 6);
+thead th input{
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  color:#000;
+  background-color: #fff;
 }
-
-button.equals {
-  background-color: #008CBA;
-}
-
-button.clear {
-  background-color: #100808;
-  color: rgb(12, 10, 10);
-}
-
-button:hover {
-  background-color: #ddd;
+.row td button{
+  width:100%;
+  height: 100%;
+  padding:5px;
+  margin:0;
+  color:#000;
+  background-color: #fff;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 40px;
 }
