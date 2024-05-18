@@ -3,14 +3,22 @@
 }
 body {
   font-family:'Times New Roman', Times, serif;
-  text-align: center;
   margin:0;
   background: linear-gradient(45deg,rgba(53, 51, 51, 0.249) 10%,#193b1d 100%,rgb(86, 159, 184) 20%); 
   width:100%;
   height:100vh;
 }
 .header{
-  display:inline-block;
+  display:inline-flex;
+  justify-content: center;
+  width:100%;
+  margin:0 auto;
+}
+.header img{
+  width:80px;
+}
+.header h1{
+  padding-bottom: 10px;
 }
 main{
   display:block;
@@ -59,4 +67,8 @@ thead th input{
   font-size: larger;
   font-weight: bold;
   border-radius: 40px;
+}
+.division{
+  width:100px;
+  object-fit:co;
 }
