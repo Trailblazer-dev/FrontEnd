@@ -35,6 +35,9 @@ header .navbar{
     padding-left: 10px;
     list-style: none;
 }
+.navbar ul li:last-child{
+    padding-right: 20px;
+}
 .navbar ul  li a{
     text-decoration: none;
     color:var(--text-color);
@@ -66,7 +69,7 @@ main{
 .welcome  h1{
     font-size: 30px;
     margin:0;
-    font-family: cursive;
+    font-family: Raleway;
 }
 .welcome p{
     color:var(--navbar-background-color);
@@ -76,7 +79,94 @@ main{
 }
 #projects{
     background: var(--work-section-background-color);
+    width: 100%;
 }
+h2{
+    font-size: 30px;
+    font-family: Raleway;
+    text-align: center;
+}
+.project{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    gap:10px;
+
+}
+.calculator{
+    display:block;
+
+}
+.calculator img{
+    width: 296px;
+    height:368px;
+    object-fit: cover;
+}
+.calculator p{
+    text-align: center;
+}
+.cafe-menu{
+    display: block;
+}
+.cafe-menu img{
+    width: 296px;
+    height:368px;
+    object-fit: cover;
+}
+.cafe-menu p{
+    text-align: center;
+}
+.piano{
+    display: block;
+}
+.piano img{
+    width: 296px;
+    height:368px;
+    object-fit: cover;
+}
+.piano p{
+    text-align: center;
+}
+.magazine{
+    display: block;
+}
+.magazine img{
+    width: 296px;
+    height:368px;
+    object-fit: cover;
+}
+.magazine p{
+    text-align: center;
+}
+.skyline{
+    display: block;
+}
+.skyline img{
+    width: 296px;
+    height:368px;
+    object-fit: cover;
+}
+.skyline p{
+    text-align: center;
+}
+.technical{
+    display: block;
+}
+.technical img{
+    width: 296px;
+    height:368px;    
+    object-fit: cover;
+}
+.technical p{
+    text-align: center;
+}
+@media (min-width: 500px){
+    .project{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 footer{
     background: var(--Welcome-section-background-color);
