@@ -160,14 +160,53 @@ h2{
 .technical p{
     text-align: center;
 }
-@media (min-width: 500px){
+
+.profile-link{
+    display:flex;
+    flex-direction: column;
+    text-align: center;;
+}
+.contact-header{
+    font-family: Raleway;    
+}
+.contact-header h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+.contact-header p{
+    text-align: center;
+    font-size: 15px;
+}
+.links ul{
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+    justify-content: space-around;
+    list-style: none;    
+}
+.links ul li a{
+    text-decoration: none;
+}
+.links ul li a:hover{
+    color:rgb(231, 234, 41);
+    border-bottom: 2px solid transparent;
+    transition:border-bottom-color 0.5s ease-in 0.1s;
+}
+footer{
+    background: var(--Welcome-section-background-color);
+    border-top: 2px solid var(--navbar-background-color);
+    display:flex;
+    justify-content: space-between;
+}
+footer p:last-child{
+    justify-content: flex-end;
+    
+}
+@media (max-width:500px){
     .project{
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
-}
-
-
-footer{
-    background: var(--Welcome-section-background-color);
 }
