@@ -1,52 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enhanced Calculator</title>
-  <link rel="icon" href="calx.png" type="image/png">
-  <link rel="stylesheet" href="cal.css">
-</head>
-<body>
-     <div class="header">
-    <img src="calx.png" alt="Your Logo" class="logo">
-    <h2>Calculator</h2>
-  </div>
-  <div class="calculator">
-    <label for="result">.....</label>
-    <input type="text" id="result" disabled>
-    <table>
-      <tr>
-        <td colspan="4"><button onclick="clearResult()">Clear</button></td>
-      </tr>
-      <tr>
-        <td><button onclick="appendToResult('7')" class="digit">7</button></td>
-        <td><button onclick="appendToResult('8')" class="digit">8</button></td>
-        <td><button onclick="appendToResult('9')" class="digit">9</button></td>
-        <td><button onclick="backspace()" class="operator">Del</button></td>
-      </tr>
-      <tr>
-        <td><button onclick="appendToResult('4')" class="digit">4</button></td>
-        <td><button onclick="appendToResult('5')" class="digit">5</button></td>
-        <td><button onclick="appendToResult('6')" class="digit">6</button></td>
-        <td><button onclick="appendToResult('+')" class="operator">+</button></td>
-      </tr>
-      <tr>
-        <td><button onclick="appendToResult('1')" class="digit">1</button></td>
-        <td><button onclick="appendToResult('2')" class="digit">2</button></td>
-        <td><button onclick="appendToResult('3')" class="digit">3</button></td>
-        <td><button onclick="appendToResult('-')" class="operator">-</button></td>
-      </tr>
-      <tr>
-        <td><button onclick="appendToResult('0')" class="digit">0</button></td>
-        <td><button onclick="appendToResult('*')" class="operator">*</button></td>
-        <td><button onclick="appendToResult('/')" class="operator">/</button></td>
-        <td><button onclick="calculateResult()" class="equals">=</button></td>
-        
-      </tr>
-    </table>
-  </div>
-
-  <script src="cal.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="icon" href="./img/calculator.png" type="image/png" />
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  <body>
+    <header>
+    <div class="header">
+      <img src="./img/calculator_full.png" alt="Your Logo" class="logo" />
+      <h2>Calculator</h2>
+    </div>
+    </header>
+    <main>
+    <div class="calculator">
+      <table>
+        <thead>
+          <tr><th colspan="4">
+      <label for="result">ans:</label>
+      <input type="text" id="result" disabled /></th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr class="row">
+          <td colspan="3"><button onclick="clearResult()">AC</button></td>
+          <td>
+            <button onclick="appendToResult('÷')" class="operator">&divide;</button></td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button onclick="appendToResult('7')" class="digit">7</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('8')" class="digit">8</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('9')" class="digit">9</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('x')" class="operator">x</button></td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button onclick="appendToResult('4')" class="digit">4</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('5')" class="digit">5</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('6')" class="digit">6</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('-')" class="operator">-</button>
+          </td>
+          
+        </tr>
+        <tr class="row">
+          <td>
+            <button onclick="appendToResult('1')" class="digit">1</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('2')" class="digit">2</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('3')" class="digit">3</button>
+          </td>
+          
+          <td>
+            <button onclick="appendToResult('+')" class="operator">+</button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button onclick="appendToResult('0')" class="digit">0</button>
+          </td>
+          <td>
+            <button onclick="appendToResult('.')" class="digit">.</button>
+          </td>
+          <td><button onclick="backspace()" class="operator">Del</button>
+          </td>
+          <td><button onclick="calculateResult()" class="equals">=</button></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="cal.js"></script>
+    </main>
+  </body>
 </html>

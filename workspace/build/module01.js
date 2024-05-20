@@ -9,7 +9,7 @@ function socialmedia(name, nickname) {
     }
     throw new Error("Your name and nickname can only be a string or a number");
 }
-console.log(socialmedia("Toads", "fog4842"));
+console.log(socialmedia("Toads", '4842'));
 console.log("here are the numbers ".concat(socialmedia(3234, 9382)));
 var newManager = {
     employeeID: 123456,
