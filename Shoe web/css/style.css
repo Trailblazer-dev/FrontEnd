@@ -194,6 +194,7 @@ header {
 }
 @media screen and (max-width: 768px) {    
         .featured-shoes {
+          display: gird;
         grid-template-columns: repeat(1,1fr);
         gap:5px;
         margin:5px 20px;
