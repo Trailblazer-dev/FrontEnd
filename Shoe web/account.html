@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page</title>
+    <link rel="stylesheet" href="./css/account.css" />
+    <script
+      src="https://kit.fontawesome.com/b9aee48aab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img_menshoes/shoes.png" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="./img_menshoes/footprints.png" alt="logo" />
+          <p>Shoe<span>'s</span></p>
+        </div>
+        <div class="search-box">
+          <label for="search-input">Search:</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="search..."
+            autocomplete="off"
+          />
+          <button type="submit">Search</button>
+        </div>
+        <ul class="navbar-menu">
+          <li>
+            <a href="index.html"
+              ><i class="fa-sharp fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="account.html"><i class="fa-regular fa-user"></i>Login</a>
+          </li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-regular fa-envelope"></i>Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-register">
+        <h1>Login or Register</h1>
+        <div class="tabs">
+          <button class="tab" onclick="openTab(event, 'login')">Login</button>
+          <button class="tab" onclick="openTab(event, 'register')">
+            Register
+          </button>
+        </div>
+        <div id="login" class="tab-content">
+          <h2>Login</h2>
+          <form action="example.com" id="login-form">
+            <!-- Login form fields go here -->
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+            /><br /><br />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br /><br />
+            <input type="submit" value="Login" />
+          </form>
+          <div class="social-media-login">
+            <p>Or login with:</p>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div id="register" class="tab-content">
+          <h2>Register</h2>
+          <form action="example.com" id="register-form">
+            <!-- Register form fields go here -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="newPassword">New Password:</label>
+            <input
+              type="password"
+              id="newPassword"
+              name="newPassword"
+              required
+            /><br /><br />
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            /><br /><br />
+
+            <label for="captcha">Captcha:</label>
+            <input
+              type="text"
+              id="captcha"
+              name="captcha"
+              required
+            /><br /><br />
+            <input type="submit" value="Register" />
+          </form>
+          <div class="social-media-login">
+            <p>Or sign up with:</p>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <section class="FAQS">
+        <h2>Frequently Asked Questions</h2>
+    
+    <div class="question">
+        <h3>Question 1: What is the purpose of this FAQ?</h3>
+        <div class="toggle-btn">Show Answer</div>
+        <p class="answer">The purpose of this FAQ section is to provide answers to the most commonly asked questions.</p>
+    </div>
+    
+    <div class="question">
+        <h3>Question 2: How do I use this feature?</h3>
+        <div class="toggle-btn">Show Answer</div>
+        <p class="answer">To use this feature, simply click on the question to reveal the answer.</p>
+    </div>
+    
+    <div class="question">
+        <h3>Question 3: Where can I find more information?</h3>
+        <div class="toggle-btn">Show Answer</div>
+        <p class="answer">For more information, please visit our website or contact our support team.</p>
+    </div>
+      </section>
+    </main>
+      <script src="./js/account.js"></script>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor, nisl ac tincidunt lacinia, velit nunc tincidunt urna, a
+            tincidunt nunc elit id nunc.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> example@example.com</li>
+            <li><i class="fa-solid fa-phone"></i> 123-456-7890</li>
+            <li>
+              <i class="fa-solid fa-map-marker"></i> 123 Street, City, Country
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Shoe's. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
