@@ -297,6 +297,10 @@ button:hover{
     grid-column: 1;
     grid-row: 1;
   }
+  img{
+    grid-column: 1;
+    width:100%;
+  }
   button {
     grid-column: 1 ; /* Adjust button to span 1 column */
     grid-row: 8;
