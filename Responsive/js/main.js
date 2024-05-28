@@ -1,25 +1,25 @@
 /*====SHOW MENU =====*/
-const navMenu=document.getElementById('nav-menu'),
+/*const navMenu=document.getElementById('nav-menu'),
 navToggle= document.getElementById('nav-toggle'),
 navClose= document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
 /*Validate if const exitst */
-if(navToggle){
+/*if(navToggle){
     navToggle.addEventListener(`click`,() => {
         navMenu.classList.add(`show-menu`)
     })
 }
 /*===== MENU HIDDEN =====*/
-if(navClose){
+/*if(navClose){
     navClose.addEventListener(`click`,() => {
         navMenu.classList.remove(`show-menu`)
     })
 }
 /*========= Remove Menu =================*/
-const navLink=document.querySelectorAll('.nav__link');
+//const navLink=document.querySelectorAll('.nav__link');
 
-function linkAction(){
+/*function linkAction(){
     const  navMenu =document.querySelectorAll('nav-menu');
     // When  we click on each nav__link ,we remove the show-menu class
     navMenu.classList.remove(`show-menu`);
@@ -38,8 +38,30 @@ function scrollHeader(){
 }
 window.addEventListener('scroll',scrollHeader)
 
-/*==============Testimonial swiper============= */
-/*let TestimonialSwiper = new Swiper(".testimonial-swiper"){
-    spaceBetween:30,
-    loop:'true'
-}*
+
+/*=============== SWIPER POPULAR ===============*/
+var swiperPopular = new Swiper(".popular__container", {
+    spaceBetween:32,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView:'auto',
+    loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+/*=============== VALUE ACCORDION ===============*/
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+
+/*=============== SHOW SCROLL UP ===============*/ 
+
+
+/*=============== DARK LIGHT THEME ===============*/ 
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
