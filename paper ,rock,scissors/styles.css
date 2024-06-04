@@ -35,7 +35,7 @@ body{
 .nav-list{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding:10px
 }
@@ -48,6 +48,7 @@ body{
     color: var(--nav-text-color);
     text-transform: uppercase;
     font-weight: var(--font-weight-medium);
+    display: flex;
 
 }
 .nav-item i{
@@ -83,8 +84,8 @@ body{
     margin-bottom: 10px;
 }
 .game-screen img{
-    width: 200px;
-    height: 180px;
+    width: 190px;
+    height: 170px;
     object-fit: cover;
 }
 .game-screen p{
@@ -126,7 +127,7 @@ body{
     transition: .4s;
     cursor: pointer;
 }
-.option{
+.option,.about,.help{
     display:none;
 }
 .settings{
@@ -164,26 +165,69 @@ button:hover{
     cursor: pointer;
     
 }
+p,ul{
+    color:#1A1A1A
+}
 .about{
+    margin-bottom: 10px;
 
 }
 .info{
-    display: block;
     line-height: 1.5rem;
+    letter-spacing: .6px;
+    text-align: justify;
+    width:50%;
+    margin: 0 auto;
 }
-.info h2{
+
+.info p::first-letter{
+  font-size: 2rem;
+  color: orangered;
+  float: left;
+  margin-right: .1rem;
+
+}
+.info ul{
+    list-style: circle;
+    list-style-position: inside;
+}
+.help{
+    margin:10px auto;
+}
+.tutorial{
+    width: 50%;
+    margin:0 auto;
+    line-height: 1.5rem;
+    letter-spacing: .6px;
+    text-align: justify;
+}
+.title{
     font-weight: var(--font-weight-bold);
     font-size: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
-.info p::first-letter{
-    text-transform: uppercase;
-    font-weight: var(--font-weight-bold);
-    color:chocolate
+.tutorial p::first-letter{
+    font-size: 2rem;
+    color: orangered;
+    float: left;
+    margin-right: .1rem;
 }
-.info ul{
-    list-style: circle;
-    text-align: center;
+.heading{
+    margin:10px 0;
     list-style-position: inside;
+    color:orangered;
+    font-weight: 100;
+}
+.tutorial ul li{
+    list-style-position: inside;
+    list-style-type:disc;
+    padding-bottom: 5px;
+}
+.end{
+    margin:10px auto;
+    line-height: 1.5rem;
+    letter-spacing: .6px;
+    text-align: center;
+    color:#006400;
 }

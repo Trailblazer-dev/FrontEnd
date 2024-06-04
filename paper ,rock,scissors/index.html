@@ -14,10 +14,18 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#home"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
-                <li class="nav-item"><a href="#option"><i class="fa-solid fa-gear"></i><p>Option</p></a></li>
-                <li class="nav-item"><a href="#about"><i class="fa-solid fa-info"></i><p>About</p></a></li>
-                <li class="nav-item"><a href="#help"><i class="fa-solid fa-question"></i><p>Help</p></a></li>
+                <li class="nav-item"><a href="#home"><i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </a></li>
+                <li class="nav-item"><a href="#option" class="op"><i class="fa-solid fa-gear"></i>
+                        <p>Option</p>
+                    </a></li>
+                <li class="nav-item"><a href="#about" class="us"><i class="fa-solid fa-info"></i>
+                        <p>About</p>
+                    </a></li>
+                <li class="nav-item"><a href="#help"><i class="fa-solid fa-question"></i>
+                        <p>Help</p>
+                    </a></li>
             </ul>
         </nav>
     </header>
@@ -27,16 +35,16 @@
                 <div class="computer">
                     <div class="game-screen">
                         <h2>Computer</h2>
-                        <img src="./img/rock-paper-scissors.png" alt="">
-                        <p class="score">Your score is:<span></span></p>
+                        <img src="./img/rock-paper-scissors.png" alt="" class="comp-img">
+                        <p class="computerScore score">Your score is:<span>0</span></p>
                     </div>
                 </div>
                 <div class="winner"></div>
                 <div class="player">
                     <div class="game-screen">
                         <h2>Player</h2>
-                        <img src="./img/rock-paper-scissors.png" alt="">
-                        <p class="score">Your score is:<span></span></p>
+                        <img src="./img/rock-paper-scissors.png" alt="" class="player-img">
+                        <p class="playerScore score">Your score is:<span></span></p>
                     </div>
                     <div class="game-btn">
                         <buttons class="rock-btn btn"><i class="fa-solid fa-hand-fist"></i>Rock</buttons>
@@ -44,6 +52,9 @@
                         <buttons class="scissor-btn btn"><i class="fa-solid fa-scissors"></i>Scissor</buttons>
                     </div>
                 </div>
+                <div class="reset-btn">
+                    <button class="reset-btn btn"><i class="fa-solid fa-redo"></i>Reset</button>
+    
             </div>
         </section>
         <section class="option" id="option">
@@ -57,28 +68,25 @@
         </section>
         <section class="about" id="about">
             <div class="info">
-                <h2>About Rock-Paper-Scissors</h2>
-                <p>Welcome to our Rock-Paper-Scissors game! This classic hand game is a simple yet entertaining way to
-                    make decisions or just have fun. The game is believed to have originated in China over 2,000 years
-                    ago and has since become a popular pastime around the world.</p>
-                <br>
+                <h2 class="title">About Rock-Paper-Scissors</h2>
+                <p>Welcome to our <strong>Rock-Paper-Scissors game!</strong> This classic hand game is a simple yet
+                    entertaining way to make decisions or just have fun.</p>
+                <p>The game is believed to have originated in China over 2,000 years ago and has since become a popular
+                    pastime around the world.</p>
                 <p>In Rock-Paper-Scissors, two players face off and simultaneously form one of three shapes with their
-                    hand:
-                    <br>
+                    hand:</p>
                 <ul>
                     <li>Rock: Represented by a clenched fist.</li>
                     <li>Paper: Represented by an open hand</li>
                     <li>Scissors: Represented by a fist with the index and middle fingers extended, forming a V.</li>
                 </ul>
                 The rules are straightforward:
-                <br>
                 <ul>
                     <li>Rock crushes Scissors</li>
                     <li>Scissors cut Paper</li>
                     <li>Paper covers Rock</li>
                 </ul>
-                </p>
-                <br>
+
                 <p>Our online version of <strong> Rock-Paper-Scissors</strong> brings this timeless game to your
                     fingertips, allowing you to challenge the computer. Enjoy the game, test your strategy, and may the
                     best player <strong>win!</strong></p>
@@ -86,62 +94,72 @@
         </section>
         <section class="help" id="help">
             <div class="tutorial">
-                <h2>How to Play Rock-Paper-Scissors</h2>
-                <p>Welcome to Rock-Paper-Scissors! If you're new to the game, here's a quick guide to help you get
+                <h2 class="title">How to Play Rock-Paper-Scissors</h2>
+                <p>Welcome to <strong>Rock-Paper-Scissors!</strong> If you're new to the game, here's a quick guide to
+                    help you get
                     started:</p>
-                <br>
                 <p>
                 <ol>
-
-                    <li>The Basics:</li>
-                    <ul>
-                        <li>Rock-Paper-Scissors is played between two players. Each player chooses one of the three
-                            shapes: Rock, Paper, or Scissors.</li>
-                        <li>Players reveal their chosen shapes simultaneously.</li>
-                    </ul>
-                    <li>The Rules:</li>
-                    <ul>
-                        <li>Rock crushes Scissors.</li>
-                        <li>Scissors cut Paper.</li>
-                        <li>Paper covers Rock.</li>
-                        <li>If both players choose the same shape, the round is a tie, and you play again.</li>
-                    </ul>
-                    <li>Playing the Game:</li>
-                    <ul>
-                        <li>Step 1: Choose your shape (Rock, Paper, or Scissors).</li>
-                        <li>Step 2: Reveal your shape when prompted.</li>
-                        <li>Step 3: The game will compare the shapes and determine the winner based on the rules.</li>
-                        <li>Step 4: The winner is announced, or if it's a tie, you play another round.</li>
-                    </ul>
-                    <li>Tips:</li>
- 
-                    <li>Keeping Score:</li>
-                    <ul>
-                    <li>Think about your opponent’s previous moves and try to predict their next move.</li>
-                    <li>Rock-Paper-Scissors can be a game of psychology as well as luck.</li>
-                    <li>Stay calm and enjoy the game!</li>
-                    </ul>
-                    <li>Settings and Options:</li>
- 
-                    <li>Keeping Score:</li>
-                    <ul>
-                    <li>Customize your game experience through the settings menu. You can adjust the difficulty level,
-                    toggle sound effects, and choose different themes.</li>
-                    </ul>
-                    <li>Need More Help?</li>
-                    <ul>
-                    <li>you have any questions or run into issues, check out our FAQ section or contact support for
-                    assistance.
+                    <li>
+                        <h2 class="heading">The Basics:</h2>
+                        <ul>
+                            <li>Rock-Paper-Scissors is played between two players. Each player chooses one of the three
+                                shapes: Rock, Paper, or Scissors.</li>
+                            <li>Players reveal their chosen shapes simultaneously.</li>
+                        </ul>
                     </li>
-                    </ul>
+                    <li>
+                        <h2 class="heading">The Rules:</h2>
+                        <ul>
+                            <li>Rock crushes Scissors.</li>
+                            <li>Scissors cut Paper.</li>
+                            <li>Paper covers Rock.</li>
+                            <li>If both players choose the same shape, the round is a tie, and you play again.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="heading">Playing the Game:</h2>
+                        <ul>
+                            <li>Step 1: Choose your shape (Rock, Paper, or Scissors).</li>
+                            <li>Step 2: Reveal your shape when prompted.</li>
+                            <li>Step 3: The game will compare the shapes and determine the winner based on the rules.
+                            </li>
+                            <li>Step 4: The winner is announced, or if it's a tie, you play another round.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="heading">Game Tips:</h2>
+                        <ul>
+                            <li>Think about your opponent’s previous moves and try to predict their next move.</li>
+                            <li>Rock-Paper-Scissors can be a game of psychology as well as luck.</li>
+                            <li>Stay calm and enjoy the game!</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="heading">Settings and Options:</h2>
+                        <ul>
+                            <li>Customize your game experience through the settings menu. You can adjust the difficulty
+                                level,
+                                toggle sound effects, and choose different themes.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="heading">Need More Help?</h2>
+                        <ul>
+                            <li>If you have any questions or run into issues, check out our FAQ section or contact
+                                support for
+                                assistance.
+                            </li>
+                        </ul>
+                    </li>
                 </ol>
-                <br>
-            </div><p>Enjoy the game and good luck!</p>
-                </p>
+            </div>
+            <p class="end">Enjoy the game and good luck!</p>
+            </p>
             </div>
         </section>
     </main>
-
+<script src="./script.js"></script>
 </body>
 
 </html>
