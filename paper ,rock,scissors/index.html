@@ -35,7 +35,22 @@
                 <div class="computer">
                     <div class="game-screen">
                         <h2>Computer</h2>
-                        <img src="./img/rock-paper-scissors.png" alt="" class="comp-img">
+                        <picture>
+                            <!-- Image for large screens (1025px and above) -->
+                            <source srcset="./img/rock-paper-scissors-big.png" media="(min-width: 1025px)"
+                                class="comp-img">
+
+                            <!-- Image for medium screens (601px to 1024px) -->
+                            <source srcset="./img/rock-paper-scissors-medium.png"
+                                media="(min-width: 601px) and (max-width: 1024px)" class="comp-img">
+
+                            <!-- Image for small screens (up to 600px) -->
+                            <source srcset="./img/rock-paper-scissors-smaller.png" media="(max-width: 600px)"
+                                class="comp-img">
+
+                            <!-- Fallback image -->
+                            <img src="./img/rock-paper-scissors-small.png" alt="Responsive image" class="comp-img">
+                        </picture>
                         <p class="computerScore score">Your score is:<span>0</span></p>
                     </div>
                 </div>
@@ -43,7 +58,22 @@
                 <div class="player">
                     <div class="game-screen">
                         <h2>Player</h2>
-                        <img src="./img/rock-paper-scissors.png" alt="" class="player-img">
+                        <picture>
+                            <!-- Image for large screens (1025px and above) -->
+                            <source srcset="./img/rock-paper-scissors-big.png" media="(min-width: 1025px)"
+                                class="player-img">
+
+                            <!-- Image for medium screens (601px to 1024px) -->
+                            <source srcset="./img/rock-paper-scissors-medium.png"
+                                media="(min-width: 601px) and (max-width: 1024px)" class="player-img">
+
+                            <!-- Image for small screens (up to 600px) -->
+                            <source srcset="./img/rock-paper-scissors-smaller.png" media="(max-width: 600px)"
+                                class="player-img">
+
+                            <!-- Fallback image -->
+                            <img src="./img/rock-paper-scissors-smaller.png" alt="Responsive image" class="player-img">
+                        </picture>
                         <p class="playerScore score">Your score is:<span></span></p>
                     </div>
                     <div class="game-btn">
@@ -54,8 +84,8 @@
                 </div>
                 <div class="reset-btn">
                     <button class="reset-btn btn"><i class="fa-solid fa-redo"></i>Reset</button>
-    
-            </div>
+
+                </div>
         </section>
         <section class="option" id="option">
             <div class="settings">
@@ -159,7 +189,7 @@
             </div>
         </section>
     </main>
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 `use strict';`;
 const clearBtn = document.querySelector(".reset-btn");
-const compImage = document.querySelector(".comp-img");
-const playerImage = document.querySelector(".player-img");
+const compImage = document.querySelectorAll(".comp-img");
+const playerImage = document.querySelectorAll(".player-img");
 const compPoint = document.querySelector(".computerScore span");
 const playerPoint = document.querySelector(".playerScore span");
 const winner = document.querySelector(".winner");
@@ -34,8 +34,12 @@ function scissorsBtn() {
   game(playerChoice, computerChoice);
 }
 function img(playerimg, compimg) {
-  compImage.src = images[compimg];
-  playerImage.src = images[playerimg];
+   compImage.forEach(element => {
+    element.srcset = images[compimg];    
+  });
+  playerImage.forEach(element => {
+    element.srcset = images[playerimg];
+  });
 }
 
 function game(player, computer) {
@@ -88,8 +92,14 @@ function endgame() {
 }
 clearBtn.addEventListener("click", clear);
 function clear() {
-  compImage.src = "./img/rock-paper-scissors.png";
-  playerImage.src = "./img/rock-paper-scissors.png";
+  let originalImg = (array)=>{
+    const img =["./img/rock-paper-scissors-big.png","./img/rock-paper-scissors-medium.png","./img/rock-paper-scissors-smaller.png","./img/rock-paper-scissors-small.png"];
+    for(var i=0; i<array.length-1; i++){
+      array[i].srcset = img[i];
+    }
+  }
+  compImage.srcset =originalImg(compImage);
+  playerImage.srcset =originalImg(playerImage);
   winner.innerHTML = "";
   computerPoint = 0;
   playerPoints = 0;
