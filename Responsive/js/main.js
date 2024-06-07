@@ -64,7 +64,6 @@ accordionItems.forEach((item) => {
     }
   });
 });
-
 const toggleItem = (item) => {
   const accordionContent = item.querySelector(".value__accordion-content");
   if (item.classList.contains("accordion-open")) {
@@ -74,7 +73,6 @@ const toggleItem = (item) => {
     accordionContent.style.height = accordionContent.scrollHeight + "px";
     item.classList.add("accordion-open");
   }
-
 };
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
