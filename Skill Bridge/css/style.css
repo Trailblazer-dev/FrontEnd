@@ -1,47 +1,93 @@
+:root{
+    /*colors*/
+    --text-color:#2f2f2f;
+    --background-color:#fdfdfd;
+    --title-color:#000000;
+    --nav-color:#c50600;
+    /*font weight*/
+    --font-medium:500;
+    --font-semibold:600;
+    /*font sizes*/
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --normal-font-size:1rem;
+    --small-font-size:.75rem;
+}
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background-image: url(../img/Aesthetic\ Blue\ Technology\ Background\ Display\ Board\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
-    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    color: #edf3f3;
+    margin:0;
+    padding: 0;
+    background-color: var(--background-color);
+    color:var(--text-color);
+    transition: .3s;
 }
-.top_header{
-    margin-top: 0 auto;
-}
-.top_header{
-    margin-top: 0;
-    background-color: #50b3dd;
-    color:#edf3f3;
-    width: 100%;
-    position: sticky;
+.header{
+    position:sticky;
+    background-color:var(--background-color);
     top:0;
+    
     z-index: 100;
+    width: 100%;
+    cursor: pointer;
 }
-.top_header::after{
-    content: '';
-    display: table;
-    clear: both;
+.nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+    flex:1;
 }
-img,h1{
-    float: left;
-    width:auto;
-    padding:0;
-    margin:0;
+.nav img{
+    width: 10%;
 }
-.navbar{
-    float: right;
-    margin:0;
+.nav h1{
+    font-size: var(--h1-font-size);
 }
-.navbar ul li{
-    display: inline-block;
-    padding-left:5px;
-    margin:0;
+.nav-menu{
+    width: 100%;
 }
-.navbar ul li a{
+.nav-list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item a{
     text-decoration: none;
-    color: #edf3f3;
-    text-transform: uppercase;
 }
-.navbar ul li a:hover{
-    color: #e54a4a;
+@media screen and (max-width: 500px){
+    .nav-menu{
+        position:fixed;
+        bottom:3rem;
+        right:0;
+        left:0;
+        width: 90%;
+        margin: 0 auto;
+        background-color: var(--background-color);
+        border-radius: 5px;
+        box-shadow: 0 5px 5px var(--text-color);
+    }
+    .nav-list{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-item a{
+        font-size: var(--normal-font-size);
+        color: var(--title-color);
+    }
+    .nav-item a:hover{
+        padding:5px;
+        border-radius: 5px;
+        color:var(--background-color);
+        background-color: #c50600;
+        transform: rotateY(10px);
+        transition: transform;
+    }
+    
 }

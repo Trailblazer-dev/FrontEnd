@@ -62,6 +62,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: .3s;/*for animation dark mode*/
 }
 h1,
 h2,
@@ -101,15 +102,39 @@ body.dark-theme{
   --second-color: hsl(25, 57%, 54%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 70%);
-  --border-color: hsl(288, 16%, 14%);
+  --border-color: hsl(228, 16%, 14%);
   --body-color: hsl(228, 12%,8%);
   --container-color:hsl(228, 16%,12%);
-
 }
 /*============
 color changes in some part 
 of the website  dark theme
 =============*/
+.dark-theme .home__search,.dark-theme .swiper-button-next,.dark-theme .swiper-button-prev{
+  border: 3px solid var(--border-color);
+}
+.dark-theme .nav__menu,.dark-theme .home__img,.dark-theme .popular__card:hover,.dark-theme .value__img,.dark-theme .accordion-open,.dark-theme .accordion-open .value__accordion-icon,.dark-theme .accordion-open .value__accordion-arrow,.dark-theme .contact__card-box:hover,.dark-theme .scrollup{
+  box-shadow: none;
+}
+.dark-theme .value__orbe,.dark-theme .value__accordion-icon,.dark-theme .value__accordion-arrow,.dark-theme .contact__orbe,.dark-theme .contact__card i,.dark-theme .contact__card-button,.dark-theme .subscribe__container{
+  background-color: var(--container-color);
+}
+.dark-theme .subscribe__container{
+  border: 6px solid var(--border-color);
+}
+.dark-theme .subscribe__description{
+  color: var(--text-color);
+}
+.dark-theme::-webkit-scrollbar{
+  background-color: hsl(228,4%,15%);
+}
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(228,4%,25%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(228,4%,35%);
+}
+
 
 /*============ Reusable css classes =================*/
 .container {
@@ -146,7 +171,7 @@ of the website  dark theme
   width: 100%;
   background-color: transparent;
   z-index: var(--z-fixed);
-  transition: 0.4s;
+  transition: 0.4s;/*for animation of dark mode*/
 }
 .nav {
   height: var(--header-height);
@@ -713,7 +738,32 @@ of the website  dark theme
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width:350px) {
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  section{
+    padding:3.5rem 0 1rem
+  }
+  .home{
+    padding-bottom: 0;
+  }
+  .contact__card{
+    grid-template-columns: repeat(1,180px);
+    justify-content: center;
+  }
+  
+}
+@media screen and (max-width:320px) {
+  .nav__menu{
+    padding:1.3rem 1.5rem;
+  }
+  .home__value{
+    column-gap: 1rem;
+  }
+  
+}
 
 /* For medium devices */
 
